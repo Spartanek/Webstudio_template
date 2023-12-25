@@ -1,0 +1,72 @@
+/* header */
+html {
+  scroll-behavior: smooth;
+}
+header {
+  padding: 24px 0;
+}
+.container {
+  width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+.container-flex {
+  display: flex;
+  align-items: center;
+}
+.navigation_list {
+  display: flex;
+}
+.logo_text {
+  color: #000;
+  font-family: "Raleway";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+  margin-right: 90px;
+}
+.logo_text-chose {
+  color: #2196f3;
+
+  font-family: "Raleway";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+.navigation_item:not(:last-child) {
+  margin-right: 50px;
+}
+.navigation {
+  margin-right: 310px;
+}
+.navigation_text {
+  color: #212121;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+.contacts {
+  display: flex;
+}
+.contacts_link {
+  color: #757575;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+}
+.contacts_item:not(:last-child) {
+  margin-right: 30px;
+}
+/* main */
+
+/* footer */
