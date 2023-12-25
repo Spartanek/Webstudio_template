@@ -67,6 +67,102 @@ header {
 .contacts_item:not(:last-child) {
   margin-right: 30px;
 }
+.contacts_item {
+  display: flex;
+  align-items: center;
+}
+.contacts_svg-email {
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+  margin-right: 10px;
+}
+.contacts_svg-tel {
+  width: 10px;
+  height: 16px;
+  fill: #757575;
+  margin-right: 10px;
+}
 /* main */
-
+/* hero */
+.hero {
+  padding: 200px 0;
+  background-image: url(./assets/img/hero.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero_heading {
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 60px; /* 136.364% */
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.hero_button {
+  border-radius: 4px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  outline: none;
+  padding: 10px 32px;
+  display: block;
+  margin: 0 auto;
+}
+.hero_button-text {
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.96px;
+}
+/* advantages */
+.advantages_list {
+  display: flex;
+}
+.advantages_item:not(:last-child) {
+  margin-right: 30px;
+}
+.advantages {
+  padding: 94px 0px;
+}
+.advantages_heading {
+  color: #212121;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.advantages_item-beforeBackground::before {
+  margin-bottom: 30px;
+  content: "";
+  display: block;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+  background: #f5f4fa;
+}
+.advantages_text {
+  color: #757575;
+  width: 270px;
+  font-family: "Roboto";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+}
 /* footer */

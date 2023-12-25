@@ -29,7 +29,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
       rel="stylesheet"
     />
-
+    <link rel="stylesheet" href="./visually-hidden.css" />
     <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
@@ -62,11 +62,17 @@
         </nav>
         <ul class="contacts">
           <li class="contacts_item">
+            <svg class="contacts_svg-email">
+              <use href="./assets/svg/symbol-defs.svg#icon-envelope"></use>
+            </svg>
             <a class="contacts_link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
           <li class="contacts_item">
+            <svg class="contacts_svg-tel">
+              <use href="./assets/svg/symbol-defs.svg#icon-smartphone"></use>
+            </svg>
             <a class="contacts_link" href="tel:380961111111"
               >+38 096 111 11 11</a
             >
@@ -74,7 +80,59 @@
         </ul>
       </div>
     </header>
-    <body class="body"></body>
+    <body class="body">
+      <section class="hero">
+        <div class="container">
+          <h2 class="hero_heading">Ефективні рішення для вашого бізнесу</h2>
+          <button class="hero_button">
+            <p class="hero_button-text">Замовити послугу</p>
+          </button>
+        </div>
+      </section>
+      <section class="advantages">
+        <h2 class="visually-hidden">Advantages</h2>
+        <div class="container">
+          <ul class="advantages_list">
+            <!-- як правильно тут назвати класи -->
+            <li
+              class="advantages_item advantages_item-beforeBackground advantages_item-beforeSVG"
+            >
+              <h3 class="advantages_heading">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="advantages_text">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позиції.
+              </p>
+            </li>
+            <li
+              class="advantages_item advantages_item-beforeBackground advantages_item-beforeSVG"
+            >
+              <h3 class="advantages_heading">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="advantages_text">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li
+              class="advantages_item advantages_item-beforeBackground advantages_item-beforeSVG"
+            >
+              <h3 class="advantages_heading">ПЛАНУВАННЯ</h3>
+              <p class="advantages_text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li
+              class="advantages_item advantages_item-beforeBackground advantages_item-beforeSVG"
+            >
+              <h3 class="advantages_heading">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="advantages_text">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </body>
     <footer class="footer"></footer>
   </body>
 </html>
