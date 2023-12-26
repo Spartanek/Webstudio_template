@@ -165,5 +165,10 @@ header {
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
 }
-
+.advantages_item-beforeSVGAntenna {
+  content: "";
+  background-image: url();
+  background-repeat: no-repeat;
+  background-position: center;
+}
 /* footer */
