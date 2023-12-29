@@ -38,7 +38,7 @@
       <div class="container container-flex">
         <a class="logo" href=""
           ><p class="logo_text">
-            Web<span class="logo_text-chose">Studio</span>
+            <span class="logo_text-chose">Web</span>Studio
           </p></a
         >
         <nav class="navigation">
@@ -49,7 +49,7 @@
               >
             </li>
             <li class="navigation_item">
-              <a class="navigation_link" href="">
+              <a class="navigation_link" href="./index2.html">
                 <p class="navigation_text">Портфоліо</p></a
               >
             </li>
@@ -88,27 +88,27 @@
           <ul class="options_list">
             <li class="options_item">
               <button class="options_button">
-                <p class="options_button-text">Усі</p>
+                <p class="options_button_text">Усі</p>
               </button>
             </li>
             <li class="options_item">
               <button class="options_button">
-                <p class="options_button-text">Веб-сайти</p>
+                <p class="options_button_text">Веб-сайти</p>
               </button>
             </li>
             <li class="options_item">
               <button class="options_button">
-                <p class="options_button-text">Додатки</p>
+                <p class="options_button_text">Додатки</p>
               </button>
             </li>
             <li class="options_item">
               <button class="options_button">
-                <p class="options_button-text">Дизайн</p>
+                <p class="options_button_text">Дизайн</p>
               </button>
             </li>
             <li class="options_item">
               <button class="options_button">
-                <p class="options_button-text">Маркетинг</p>
+                <p class="options_button_text">Маркетинг</p>
               </button>
             </li>
           </ul>
@@ -224,9 +224,89 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="footer_contacts"></div>
-      <div class="footer_social"></div>
-      <div class="footer_input"></div>
+      <div class="container container-flex">
+        <div class="footer_info">
+          <a class="footer_info_link" href="">
+            <p class="footer_info_text">
+              <span class="footer_info_text-chose">Web</span>Studio
+            </p>
+          </a>
+          <address class="address">м. Київ, пр-т Лесі Українки, 26</address>
+          <ul class="footer_info_contacts">
+            <li class="footer_info_contacts-email">
+              <a
+                class="footer_info_contacts_link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="footer_info_contacts-tel">
+              <a class="footer_info_contacts_link" href="tel:380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer_social">
+          <h3 class="footer_social_heading">приєднуйтесь</h3>
+          <ul class="footer_social_list">
+            <li class="footer_social_item">
+              <div class="footer_div-circle">
+                <svg class="footer_div-circle_svg">
+                  <use href="./assets/svg/logo.svg#icon-instagram"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="footer_social_item">
+              <div class="footer_div-circle">
+                <svg class="footer_div-circle_svg">
+                  <use href="./assets/svg/logo.svg#icon-twitter"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="footer_social_item">
+              <div class="footer_div-circle">
+                <svg class="footer_div-circle_svg">
+                  <use href="./assets/svg/logo.svg#icon-facebook"></use>
+                </svg>
+              </div>
+            </li>
+            <li class="footer_social_item">
+              <div class="footer_div-circle">
+                <svg class="footer_div-circle_svg">
+                  <use href="./assets/svg/logo.svg#icon-linkedin"></use>
+                </svg>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_sending">
+          <form class="footer_form" action="">
+            <label class="footer_input_label" for="mylo"
+              >Підпишіться на розсилку</label
+            >
+            <div class="footer_div-flex">
+              <input
+                class="footer_input"
+                placeholder="E-mail"
+                autocomplete="off"
+                type="email"
+                id="mylo"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                required
+              />
+              <button class="footer_button" type="submit">
+                <div class="inDiv_footer_button">
+                  <p class="footer_button_text">Підписатися</p>
+                  <svg class="footer_button_svg">
+                    <use href="./assets/svg/telegram.svg#telegram"></use>
+                  </svg>
+                </div>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

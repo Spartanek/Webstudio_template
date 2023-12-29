@@ -165,10 +165,346 @@ header {
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
 }
-.advantages_item-beforeSVGAntenna {
+.advantages_item-beforeSVGAntenna::before {
   content: "";
-  background-image: url();
+  background-image: url(./assets/svg/antenna.svg);
   background-repeat: no-repeat;
   background-position: center;
 }
+.advantages_item-beforeSVGClock::before {
+  content: "";
+  background-image: url(./assets/svg/clock.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.advantages_item-beforeSVGAstronaut::before {
+  content: "";
+  background-image: url(./assets/svg/astronaut.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.advantages_item-beforeSVGDiagram::before {
+  content: "";
+  background-image: url(./assets/svg/diagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* products */
+.products {
+  padding-bottom: 94px;
+}
+.products_div {
+  position: relative;
+}
+.products_img {
+  width: 370px;
+  height: 294px;
+}
+.products_list {
+  display: flex;
+}
+.products_heading {
+  color: #212121;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+}
+.products_item:not(:last-child) {
+  margin-right: 30px;
+}
+.products_box {
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  padding: 27px 0px;
+  position: absolute;
+  bottom: 4px;
+}
+.products_text {
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+/* profiles */
+.profiles {
+  padding: 94px 0px;
+  background: #f5f4fa;
+}
+.profiles_photo {
+  width: 270px;
+  height: 260px;
+}
+.profiles_list {
+  display: flex;
+}
+.profiles_heading {
+  color: #212121;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+/* може і неправильно давати ширину і висоту li */
+.profiles_item {
+  border-radius: 0px 0px 4px 4px;
+  background: #fff;
+  width: 270px;
+  height: 428px;
+
+  /* material shadow v1 */
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.profiles_name {
+  color: #212121;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  margin-bottom: 10px;
+}
+.profiles_profession {
+  color: #757575;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+.div_biography {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.profiles_media_svg {
+  width: 20px;
+  height: 20px;
+  fill: rgba(175, 177, 184, 1);
+}
+.profiles_media_list {
+  display: flex;
+  justify-content: center;
+}
+.profiles_media_item:not(:last-child) {
+  margin-right: 15px;
+}
+.media_circle_div {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+/* не зовсім правильно */
+.media_circle_div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.profiles_item:not(:last-child) {
+  margin-right: 30px;
+}
+/* partners */
+.partners_svg {
+  fill: rgba(175, 177, 184, 1);
+  width: 105px;
+  height: 60px;
+}
+.partners {
+  padding: 94px 0px;
+}
+.partners_heading {
+  margin-bottom: 50px;
+  color: #212121;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+}
+.partners_div {
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+}
+.partners_list {
+  display: flex;
+}
+.partners_item:not(:last-child) {
+  margin-right: 30px;
+}
 /* footer */
+.footer {
+  background: #2f303a;
+  padding: 60px 0px;
+}
+.footer_info_text {
+  color: #fff;
+  font-family: "Raleway";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+  margin-bottom: 20px;
+}
+.footer_info_text-chose {
+  color: #2196f3;
+  font-family: "Raleway";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.78px;
+}
+.address {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+  margin-bottom: 10px;
+}
+.footer_info_contacts_link {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+}
+.footer_info {
+  margin-right: 70px;
+}
+.footer_social {
+  margin-right: 90px;
+}
+.footer_social_heading {
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer_div-circle_svg {
+  fill: rgba(255, 255, 255, 1);
+  width: 20px;
+  height: 20px;
+}
+.footer_social_list {
+  display: flex;
+}
+.footer_div-circle {
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+}
+.footer_social_item:not(:last-child) {
+  margin-right: 10px;
+}
+.footer_info_contacts-email {
+  margin-bottom: 10px;
+}
+.footer_input_label {
+  display: block;
+  color: #fff;
+  margin-bottom: 20px;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+}
+.footer_button {
+  display: block;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.footer_button_svg {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+.inDiv_footer_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer_button_text {
+  color: #fff;
+
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.96px;
+  margin-right: 10px;
+}
+.footer_input {
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(33, 150, 243, 0);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  width: 358px;
+  height: 50px;
+  padding-left: 16px;
+  color: #fff;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.96px;
+  outline: none;
+  margin-right: 10px;
+}
+/* хоча там не сказано, який буде шрифт при написанні в input*/
+.footer_input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.48px;
+}
+.footer_div-flex {
+  display: flex;
+}
