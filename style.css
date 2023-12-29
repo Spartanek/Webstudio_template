@@ -1,3 +1,7 @@
+:root {
+  --accent-color: #2196f3;
+  --text-accent-color: #fff;
+}
 /* header */
 html {
   scroll-behavior: smooth;
@@ -18,7 +22,7 @@ header {
   display: flex;
 }
 .logo_text {
-  color: #000;
+  color: var(--accent-color);
   font-family: "Raleway";
   font-size: 26px;
   font-style: normal;
@@ -28,7 +32,7 @@ header {
   margin-right: 90px;
 }
 .logo_text-chose {
-  color: #2196f3;
+  color: #000;
 
   font-family: "Raleway";
   font-size: 26px;
@@ -48,7 +52,7 @@ header {
   height: 4px;
   margin-top: 28px;
   border-radius: 2px;
-  background: #2196f3;
+  background: var(--accent-color);
   transform: scale(0);
   transition-duration: 250ms;
   transition-property: transform;
@@ -56,7 +60,7 @@ header {
 }
 .navigation_item:hover::after {
   transform: scale(1);
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 }
 .navigation_text {
   color: #212121;
@@ -72,7 +76,7 @@ header {
 }
 /* не певен, що так правильно */
 .navigation_item:hover > .navigation_link > .navigation_text {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 .navigation_item:not(:last-child) {
   margin-right: 50px;
@@ -105,13 +109,13 @@ header {
   align-items: center;
 }
 .contacts_item:hover > .contacts_svg-email {
-  fill: rgba(33, 150, 243, 1);
+  fill: var(--accent-color);
 }
 .contacts_item:hover > .contacts_svg-tel {
-  fill: rgba(33, 150, 243, 1);
+  fill: var(--accent-color);
 }
 .contacts_item:hover > .contacts_link {
-  color: rgba(33, 150, 243, 1);
+  color: var(--accent-color);
 }
 .contacts_svg-email {
   width: 16px;
@@ -141,7 +145,7 @@ header {
   background-size: cover;
 }
 .hero_heading {
-  color: #fff;
+  color: var(--text-accent-color);
   text-align: center;
   font-family: "Roboto";
   font-size: 44px;
@@ -156,7 +160,7 @@ header {
 }
 .hero_button {
   border-radius: 4px;
-  background: #2196f3;
+  background: var(--accent-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   outline: none;
   padding: 10px 32px;
@@ -164,7 +168,7 @@ header {
   margin: 0 auto;
 }
 .hero_button-text {
-  color: #fff;
+  color: var(--text-accent-color);
   text-align: center;
   font-family: "Roboto";
   font-size: 16px;
@@ -274,7 +278,7 @@ header {
   bottom: 4px;
 }
 .products_text {
-  color: #fff;
+  color: var(--text-accent-color);
   text-align: center;
   font-family: "Roboto";
   font-size: 14px;
@@ -310,7 +314,7 @@ header {
 /* може і неправильно давати ширину і висоту li */
 .profiles_item {
   border-radius: 0px 0px 4px 4px;
-  background: #fff;
+  background: var(--text-accent-color);
   width: 270px;
   height: 428px;
 
@@ -359,7 +363,7 @@ header {
   margin-right: 15px;
 }
 .profiles_media_item:hover > .media_circle_div {
-  background-color: #2196f3;
+  background-color: var(--accent-color);
 }
 .profiles_media_item:hover > .media_circle_div > .profiles_media_svg {
   fill: rgba(255, 255, 255, 1);
@@ -403,10 +407,10 @@ header {
 }
 /* 1 px solid обов'язково прописав, бо без цього не працює */
 .partners_item:hover > .partners_div {
-  border: 1px solid rgba(33, 150, 243, 1);
+  border: 1px solid var(--accent-color);
 }
 .partners_item:hover > .partners_div > .partners_svg {
-  fill: rgba(33, 150, 243, 1);
+  fill: var(--accent-color);
 }
 .partners {
   padding: 94px 0px;
@@ -436,7 +440,7 @@ header {
   padding: 60px 0px;
 }
 .footer_info_text {
-  color: #fff;
+  color: var(--text-accent-color);
   font-family: "Raleway";
   font-size: 26px;
   font-style: normal;
@@ -446,7 +450,7 @@ header {
   margin-bottom: 20px;
 }
 .footer_info_text-chose {
-  color: #2196f3;
+  color: var(--accent-color);
   font-family: "Raleway";
   font-size: 26px;
   font-style: normal;
@@ -455,7 +459,7 @@ header {
   letter-spacing: 0.78px;
 }
 .address {
-  color: #fff;
+  color: var(--text-accent-color);
   font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
@@ -480,7 +484,7 @@ header {
   margin-right: 90px;
 }
 .footer_social_heading {
-  color: #fff;
+  color: var(--text-accent-color);
   font-family: "Roboto";
   font-size: 14px;
   font-style: normal;
@@ -514,7 +518,7 @@ header {
 }
 
 .footer_social_item:hover > .footer_div-circle {
-  background-color: rgba(33, 150, 243, 1);
+  background-color: var(--accent-color);
 }
 /* чи має сенс, якщо колір не змінюється? */
 .footer_social_item:hover > .footer_div-circle > .footer_div-circle_svg {
@@ -528,7 +532,7 @@ header {
 }
 .footer_input_label {
   display: block;
-  color: #fff;
+  color: var(--text-accent-color);
   margin-bottom: 20px;
   font-family: "Roboto";
   font-size: 14px;
@@ -543,13 +547,13 @@ header {
   width: 200px;
   height: 50px;
   border-radius: 4px;
-  background: #2196f3;
+  background: var(--accent-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .footer_button_svg {
   width: 24px;
   height: 24px;
-  fill: #fff;
+  fill: var(--text-accent-color);
 }
 .inDiv_footer_button {
   display: flex;
@@ -557,7 +561,7 @@ header {
   justify-content: center;
 }
 .footer_button_text {
-  color: #fff;
+  color: var(--text-accent-color);
 
   text-align: center;
   font-family: "Roboto";
@@ -576,7 +580,7 @@ header {
   width: 358px;
   height: 50px;
   padding-left: 16px;
-  color: #fff;
+  color: var(--text-accent-color);
   font-family: "Roboto";
   font-size: 16px;
   font-style: normal;
@@ -651,7 +655,7 @@ header {
   border-radius: 50%;
 }
 .button_hero-close:hover {
-  fill: #2196f3;
+  fill: var(--accent-color);
 }
 .terms_text {
   margin-left: 10px;
@@ -723,7 +727,7 @@ header {
   letter-spacing: 0.12px;
 }
 .textarea_first:focus {
-  outline: 1px solid #2196f3;
+  outline: 1px solidvar(--accent-color);
 }
 .span_modal {
   position: relative;
@@ -743,7 +747,7 @@ header {
   left: 12px;
 }
 .terms {
-  color: #2196f3;
+  color: var(--accent-color);
   text-decoration: underline;
 }
 .comment_label {
@@ -769,10 +773,10 @@ header {
 }
 
 .modal_Input:focus {
-  outline: 1px solid #2196f3;
+  outline: 1px solidvar(--accent-color);
 }
 .modal_Input:focus + .svg_modalka {
-  fill: rgba(33, 150, 243, 1);
+  fill: var(--accent-color);
 }
 .box_checkbox {
   display: flex;
@@ -788,9 +792,9 @@ header {
   width: 200px;
   height: 50px;
   border-radius: 4px;
-  background: #2196f3;
+  background: var(--accent-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-  color: #fff;
+  color: var(--text-accent-color);
   text-align: center;
   font-family: "Roboto";
   font-size: 16px;
@@ -799,5 +803,5 @@ header {
   border: none;
 }
 input:target {
-  border: 1px solid #2196f3;
+  border: 1px solidvar(--accent-color);
 }
