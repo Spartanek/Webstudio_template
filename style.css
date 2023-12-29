@@ -534,3 +534,187 @@ header {
 .footer_div-flex {
   display: flex;
 }
+/* modal */
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background-color: white;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+.modal-container {
+  margin: 0 auto;
+  width: 528px;
+  padding: 0px 40px;
+}
+.button_hero-close {
+  /* трохи призвабув як краще тут записати замість margin */
+  margin-top: 8px;
+  margin-right: 8px;
+  margin-bottom: 2px;
+  padding: 6px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+.button_hero-close:hover {
+  fill: #2196f3;
+}
+.modal-close-divFlex {
+  display: flex;
+  justify-content: flex-end;
+}
+.header_form {
+  color: #212121;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.6px;
+  margin-bottom: 12px;
+}
+.label_text {
+  color: #757575;
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.12px;
+}
+.label_text {
+  display: block;
+}
+.modal_Input {
+  width: 448px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  padding-left: 42px;
+}
+.textarea_first {
+  resize: none;
+  width: 448px;
+  height: 120px;
+  padding: 12px 16px;
+  color: #757575;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  margin-bottom: 4px;
+}
+.textarea_first::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.12px;
+}
+.textarea_first:focus {
+  outline: 1px solid #2196f3;
+}
+.span_modal {
+  position: relative;
+}
+.div-label {
+  margin-bottom: 5px;
+}
+.div-label:not(:first-child) {
+  margin-top: 10px;
+}
+
+.svg_modalka {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 0px;
+  left: 12px;
+}
+.terms {
+  color: #2196f3;
+  text-decoration: underline;
+}
+.comment_label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  display: block;
+  color: #757575;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.12px;
+}
+.label_text {
+  color: #757575;
+  font-family: "Roboto";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.12px;
+}
+
+.modal_Input:focus {
+  outline: 1px solid #2196f3;
+}
+.modal_Input:focus + .svg_modalka {
+  fill: rgba(33, 150, 243, 1);
+}
+.box_checkbox {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* центруватись за контейнером не захотілось */
+.modalka_submitButton {
+  margin: 0 auto;
+  margin-top: 30px;
+  display: block;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  border: none;
+}
+input:target {
+  border: 1px solid #2196f3;
+}

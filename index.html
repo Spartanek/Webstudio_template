@@ -84,7 +84,7 @@
       <section class="hero">
         <div class="container">
           <h2 class="hero_heading">Ефективні рішення для вашого бізнесу</h2>
-          <button class="hero_button">
+          <button class="hero_button" data-modal-open>
             <p class="hero_button-text">Замовити послугу</p>
           </button>
         </div>
@@ -490,6 +490,95 @@
         </div>
       </div>
     </footer>
+    <!-- modalka -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <div class="modal-close-divFlex">
+          <svg class="button_hero-close" data-modal-close>
+            <use href="./assets/svg/close-modal.svg#icon-close"></use>
+          </svg>
+        </div>
+        <div class="modal-container">
+          <h2 class="header_form">Залиште свої дані, ми вам передзвонимо</h2>
+          <form class="form_modal" action="">
+            <div class="div-label">
+              <label class="label_text" for="textik">Ім'я</label>
+            </div>
+            <span class="span_modal">
+              <input
+                class="modal_Input"
+                type="text"
+                autocomplete="off"
+                type="text"
+                id="textik"
+                pattern="[A-Za-z0-9]{3,}"
+                title="Minimum required name should consist 3 letters"
+                required
+              />
+              <svg class="svg_modalka">
+                <use href="./assets/svg/modalochka.svg#icon-person"></use>
+              </svg>
+            </span>
+            <div class="div-label">
+              <label class="label_text" for="textik">Телефон</label>
+            </div>
+            <span class="span_modal">
+              <input
+                class="modal_Input"
+                autocomplete="off"
+                type="tel"
+                id="telef"
+                required
+                pattern="[0-9]{3,}"
+                title="You should write only numbers"
+              />
+              <svg class="svg_modalka">
+                <use href="./assets/svg/modalochka.svg#icon-phone"></use>
+              </svg>
+            </span>
+
+            <div class="div-label">
+              <label class="label_text" for="mylo">Пошта</label>
+            </div>
+            <span class="span_modal">
+              <input
+                class="modal_Input"
+                autocomplete="off"
+                type="email"
+                id="mylo"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                required
+              />
+              <svg class="svg_modalka">
+                <use href="./assets/svg/modalochka.svg#icon-email"></use>
+              </svg>
+            </span>
+
+            <label class="comment_label" for="comment">Коментар</label>
+            <!-- fixed не працює -->
+            <textarea
+              class="textarea_first"
+              autocomplete="off"
+              name=""
+              id="comment"
+              placeholder="Введіть текст"
+              fixed
+            ></textarea>
+            <div class="box_checkbox">
+              <input type="checkbox" id="check" required />
+              <p>
+                Погоджуюся з розсилкою та приймаю
+                <a class="terms" href="rulesForCustomers">Умови договору</a>
+              </p>
+            </div>
+            <!-- не хотів в p текст заходи -->
+            <button class="modalka_submitButton" type="submit">
+              Відправити
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
