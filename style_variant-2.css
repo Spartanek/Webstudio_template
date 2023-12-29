@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.quadratik {
+  width: 100px;
+  height: 100px;
+
+  animation-name: prikolchcik;
+  position: absolute;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes prikolchcik {
+  0% {
+    transform: rotate(0deg) translate(-165px) rotate(0deg);
+    background: red;
+  }
+  100% {
+    transform: rotate(360deg) translate(-165px) rotate(-360deg);
+    background: yellow;
+  }
+}

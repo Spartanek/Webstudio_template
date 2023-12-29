@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+.quadrat {
+  width: 100px;
+  height: 100px;
+  animation-name: prikolchcik;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes prikolchcik {
+  0% {
+    transform: translateX(500px) translateY(100px);
+    background: yellow;
+  }
+  25% {
+    transform: translateX(200px) translateY(100px);
+    background: red;
+  }
+  50% {
+    transform: translateX(200px) translateY(400px);
+    background: blue;
+  }
+  75% {
+    transform: translateX(500px) translateY(400px);
+    background: green;
+  }
+  100% {
+    transform: translateX(500px) translateY(100px);
+    background: yellow;
+  }
+}
