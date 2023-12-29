@@ -98,6 +98,7 @@ header::after {
 .navigation {
   margin-right: 310px;
 }
+/* як зробити щоб і то відображалось, і інша навігація */
 .navigation_text {
   color: #212121;
   font-family: "Roboto";
@@ -106,6 +107,13 @@ header::after {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* не певен, що так правильно */
+.navigation_item:hover > .navigation_link > .navigation_text {
+  color: #2196f3;
 }
 .contacts {
   display: flex;
@@ -118,6 +126,40 @@ header::after {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts_item {
+  display: flex;
+  align-items: center;
+}
+.contacts_item:hover > .contacts_svg-email {
+  fill: rgba(33, 150, 243, 1);
+}
+.contacts_item:hover > .contacts_svg-tel {
+  fill: rgba(33, 150, 243, 1);
+}
+.contacts_item:hover > .contacts_link {
+  color: rgba(33, 150, 243, 1);
+}
+.contacts_svg-email {
+  width: 16px;
+  height: 12px;
+  fill: #757575;
+  margin-right: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contacts_svg-tel {
+  width: 10px;
+  height: 16px;
+  fill: #757575;
+  margin-right: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts_item:not(:last-child) {
   margin-right: 30px;
@@ -125,18 +167,6 @@ header::after {
 .contacts_item {
   display: flex;
   align-items: center;
-}
-.contacts_svg-email {
-  width: 16px;
-  height: 12px;
-  fill: #757575;
-  margin-right: 10px;
-}
-.contacts_svg-tel {
-  width: 10px;
-  height: 16px;
-  fill: #757575;
-  margin-right: 10px;
 }
 
 /* main */
@@ -151,11 +181,20 @@ header::after {
 .options_item:not(:last-child) {
   margin-right: 10px;
 }
+.options_item:hover > .options_button {
+  background-color: #2196f3;
+}
+.options_item:hover > .options_button > .options_button_text {
+  color: rgba(255, 255, 255, 1);
+}
 .options_button {
   border-radius: 4px;
-  background: #f5f4fa;
+  background-color: #f5f4fa;
   outline: none;
   padding: 6px 22px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .options_button_text {
   color: #212121;
@@ -166,6 +205,9 @@ header::after {
   font-weight: 500;
   line-height: 26px; /* 162.5% */
   letter-spacing: 0.48px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* projects */
 .projects_list {
@@ -299,20 +341,36 @@ header::after {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+
+.footer_social_list {
+  display: flex;
+}
 .footer_div-circle_svg {
   fill: rgba(255, 255, 255, 1);
   width: 20px;
   height: 20px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer_social_list {
-  display: flex;
-}
+
 .footer_div-circle {
   border-radius: 50%;
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 12px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer_social_item:hover > .footer_div-circle {
+  background-color: rgba(33, 150, 243, 1);
+}
+/* чи має сенс, якщо колір не змінюється? */
+.footer_social_item:hover > .footer_div-circle > .footer_div-circle_svg {
+  fill: rgba(255, 255, 255, 1);
 }
 .footer_social_item:not(:last-child) {
   margin-right: 10px;

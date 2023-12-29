@@ -50,14 +50,25 @@ header {
   border-radius: 2px;
   background: #2196f3;
   transform: scale(0);
-  transition-duration: 500ms;
+  transition-duration: 250ms;
   transition-property: transform;
   transition-timing-function: ease-in-out;
-  transition-delay: 1s;
 }
 .navigation_item:hover::after {
   transform: scale(1);
   background-color: #2196f3;
+}
+.navigation_text {
+  color: #212121;
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* не певен, що так правильно */
 .navigation_item:hover > .navigation_link > .navigation_text {
@@ -69,17 +80,13 @@ header {
 .navigation {
   margin-right: 310px;
 }
-.navigation_text {
-  color: #212121;
-  font-family: "Roboto";
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-}
+
 .contacts {
   display: flex;
+}
+
+.contacts_item:not(:last-child) {
+  margin-right: 30px;
 }
 .contacts_link {
   color: #757575;
@@ -89,25 +96,40 @@ header {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.28px;
-}
-.contacts_item:not(:last-child) {
-  margin-right: 30px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts_item {
   display: flex;
   align-items: center;
+}
+.contacts_item:hover > .contacts_svg-email {
+  fill: rgba(33, 150, 243, 1);
+}
+.contacts_item:hover > .contacts_svg-tel {
+  fill: rgba(33, 150, 243, 1);
+}
+.contacts_item:hover > .contacts_link {
+  color: rgba(33, 150, 243, 1);
 }
 .contacts_svg-email {
   width: 16px;
   height: 12px;
   fill: #757575;
   margin-right: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contacts_svg-tel {
   width: 10px;
   height: 16px;
   fill: #757575;
   margin-right: 10px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* main */
 /* hero */
@@ -325,6 +347,9 @@ header {
   width: 20px;
   height: 20px;
   fill: rgba(175, 177, 184, 1);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .profiles_media_list {
   display: flex;
@@ -333,10 +358,20 @@ header {
 .profiles_media_item:not(:last-child) {
   margin-right: 15px;
 }
+.profiles_media_item:hover > .media_circle_div {
+  background-color: #2196f3;
+}
+.profiles_media_item:hover > .media_circle_div > .profiles_media_svg {
+  fill: rgba(255, 255, 255, 1);
+}
 .media_circle_div {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  background-color: transparent;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* не зовсім правильно */
 .media_circle_div {
@@ -352,6 +387,26 @@ header {
   fill: rgba(175, 177, 184, 1);
   width: 105px;
   height: 60px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.partners_div {
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* 1 px solid обов'язково прописав, бо без цього не працює */
+.partners_item:hover > .partners_div {
+  border: 1px solid rgba(33, 150, 243, 1);
+}
+.partners_item:hover > .partners_div > .partners_svg {
+  fill: rgba(33, 150, 243, 1);
 }
 .partners {
   padding: 94px 0px;
@@ -367,19 +422,14 @@ header {
   line-height: normal;
   letter-spacing: 1.08px;
 }
-.partners_div {
-  width: 170px;
-  height: 92px;
-  padding: 16px 32px;
-  border-radius: 4px;
-  border: 1px solid #afb1b8;
-}
+
 .partners_list {
   display: flex;
 }
 .partners_item:not(:last-child) {
   margin-right: 30px;
 }
+
 /* footer */
 .footer {
   background: #2f303a;
@@ -440,20 +490,35 @@ header {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+.footer_social_list {
+  display: flex;
+}
 .footer_div-circle_svg {
   fill: rgba(255, 255, 255, 1);
   width: 20px;
   height: 20px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer_social_list {
-  display: flex;
-}
+
 .footer_div-circle {
   border-radius: 50%;
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   padding: 12px;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer_social_item:hover > .footer_div-circle {
+  background-color: rgba(33, 150, 243, 1);
+}
+/* чи має сенс, якщо колір не змінюється? */
+.footer_social_item:hover > .footer_div-circle > .footer_div-circle_svg {
+  fill: rgba(255, 255, 255, 1);
 }
 .footer_social_item:not(:last-child) {
   margin-right: 10px;
