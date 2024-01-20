@@ -1,0 +1,102 @@
+/* profiles */
+.profiles {
+  padding: 94px 0px;
+  background: #f5f4fa;
+}
+.profiles_photo {
+  width: 270px;
+  height: 260px;
+}
+.profiles_list {
+  display: flex;
+}
+.profiles_heading {
+  color: var(--hover-accent-color);
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+/* може і неправильно давати ширину і висоту li */
+.profiles_item {
+  border-radius: 0px 0px 4px 4px;
+  background: var(--text-accent-color);
+  width: 270px;
+  height: 428px;
+
+  /* material shadow v1 */
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.profiles_name {
+  color: var(--hover-accent-color);
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
+  margin-bottom: 10px;
+}
+.profiles_profession {
+  color: var(--non-hover-color);
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.48px;
+}
+.div_biography {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.profiles_media_svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--non-hover-color);
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.profiles_media_list {
+  display: flex;
+  justify-content: center;
+}
+.profiles_media_item {
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+  &:hover > .media_circle_div {
+    background-color: var(--accent-color);
+  }
+}
+
+.media_circle_div {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: transparent;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover > .profiles_media_svg {
+    fill: rgba(255, 255, 255, 1);
+  }
+}
+/* не певен, що останні 3 властивості display: flex;
+  align-items: center;
+  justify-content: center */
+
+.profiles_item:not(:last-child) {
+  margin-right: 30px;
+}

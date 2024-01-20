@@ -1,13 +1,205 @@
+@charset "UTF-8";
+.footer_button {
+  display: block;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background: var(--accent-color);
+  border-radius: 4px;
+}
+
 :root {
   --accent-color: #2196f3;
   --text-accent-color: #fff;
   --non-hover-color: #757575;
   --hover-accent-color: #000;
 }
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote {
+  quotes: none;
+}
+blockquote:before {
+  content: "";
+  content: none;
+}
+blockquote:after {
+  content: "";
+  content: none;
+}
+
+q {
+  quotes: none;
+}
+q:before {
+  content: "";
+  content: none;
+}
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  margin: -1px;
+  pointer-events: none;
+}
+
+input:target {
+  border: 1px solid var(--accent-color);
+}
+
+.container {
+  width: 1200px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+
+.container-flex {
+  display: flex;
+  align-items: center;
+}
+
 /* header */
 html {
   scroll-behavior: smooth;
 }
+
 header {
   padding-top: 32px;
   padding-bottom: 94px;
@@ -20,18 +212,11 @@ header::after {
   display: block;
   background: #ececec;
 }
-.container {
-  width: 1200px;
-  padding: 0px 15px;
-  margin: 0 auto;
-}
-.container-flex {
-  display: flex;
-  align-items: center;
-}
+
 .navigation_list {
   display: flex;
 }
+
 .logo_text {
   color: var(--hover-accent-color);
   font-family: "Raleway";
@@ -42,9 +227,9 @@ header::after {
   letter-spacing: 0.78px;
   margin-right: 90px;
 }
+
 .logo_text-chose {
   color: var(--accent-color);
-
   font-family: "Raleway";
   font-size: 26px;
   font-style: normal;
@@ -52,6 +237,7 @@ header::after {
   line-height: normal;
   letter-spacing: 0.78px;
 }
+
 /* чось не хоче відображатись і та вкладка на якій вже люди, та ховер */
 /* .navigation_item {
   position: relative;
@@ -84,12 +270,14 @@ header::after {
 }
 
 /* не певен, що так правильно */
-.navigation_item:hover > .navigation_link > .navigation_text {
+.navigation_link:hover > .navigation_text {
   color: var(--accent-color);
 }
+
 .navigation_item:not(:last-child) {
   margin-right: 50px;
 }
+
 .navigation_item-portfolio::after {
   position: absolute;
   content: "";
@@ -104,6 +292,7 @@ header::after {
 .navigation {
   margin-right: 310px;
 }
+
 /* як зробити щоб і то відображалось, і інша навігація */
 .navigation_text {
   color: var(--hover-accent-color);
@@ -117,13 +306,11 @@ header::after {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-/* не певен, що так правильно */
-.navigation_item:hover > .navigation_link > .navigation_text {
-  color: var(--accent-color);
-}
+
 .contacts {
   display: flex;
 }
+
 .contacts_link {
   color: var(--non-hover-color);
   font-family: "Roboto";
@@ -136,6 +323,7 @@ header::after {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .contacts_item {
   display: flex;
   align-items: center;
@@ -149,6 +337,7 @@ header::after {
 .contacts_item:hover > .contacts_link {
   color: var(--accent-color);
 }
+
 .contacts_svg-email {
   width: 16px;
   height: 12px;
@@ -158,6 +347,7 @@ header::after {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .contacts_svg-tel {
   width: 10px;
   height: 16px;
@@ -167,41 +357,45 @@ header::after {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.contacts_item:not(:last-child) {
-  margin-right: 30px;
-}
+
 .contacts_item {
   display: flex;
   align-items: center;
 }
+.contacts_item:not(:last-child) {
+  margin-right: 30px;
+}
 
-/* main */
 /* options */
 .options {
   padding-bottom: 50px;
 }
+
 .options_list {
   display: flex;
   justify-content: center;
 }
+
 .options_item:not(:last-child) {
   margin-right: 10px;
 }
-.options_item:hover > .options_button {
-  background-color: var(--accent-color);
-}
-.options_item:hover > .options_button > .options_button_text {
-  color: var(--text-accent-color);
-}
+
 .options_button {
   border-radius: 4px;
-  background-color: var(--text-accent-color);
+  background-color: #f5f4fa;
   outline: none;
   padding: 6px 22px;
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+.options_button:hover {
+  background-color: var(--accent-color);
+}
+.options_button:hover > .options_button_text {
+  color: var(--text-accent-color);
+}
+
 .options_button_text {
   color: var(--hover-accent-color);
   text-align: center;
@@ -215,29 +409,37 @@ header::after {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 /* projects */
 .projects_list {
   display: grid;
-
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   row-gap: 30px;
-  column-gap: 30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
 }
+
 .projects {
   padding-bottom: 94px;
 }
+
 .projects_item {
   border: 1px solid #eee;
   background: var(--text-accent-color);
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
-    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   width: 370px;
 }
+.projects_item:hover .p-overflow {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .project_image {
   width: 370px;
   height: 294px;
 }
+
 .p-overflow {
   color: var(--text-accent-color);
   font-family: "Roboto";
@@ -257,14 +459,12 @@ header::after {
   transition-duration: 500ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.projects_item:hover .p-overflow {
-  opacity: 1;
-  transform: translateY(0);
-}
+
 .div-overflow {
   position: relative;
   overflow: hidden;
 }
+
 .project_heading {
   color: var(--hover-accent-color);
   font-family: "Roboto";
@@ -275,6 +475,7 @@ header::after {
   letter-spacing: 1.08px;
   margin-bottom: 5px;
 }
+
 .project_text {
   color: var(--non-hover-color);
   font-family: "Roboto";
@@ -284,14 +485,17 @@ header::after {
   line-height: 30px; /* 187.5% */
   letter-spacing: 0.48px;
 }
+
 .project_div {
   padding: 20px 24px;
 }
+
 /* footer */
 .footer {
   background: #2f303a;
   padding: 60px 0px;
 }
+
 .footer_info_text {
   color: var(--text-accent-color);
   font-family: "Raleway";
@@ -302,6 +506,7 @@ header::after {
   letter-spacing: 0.78px;
   margin-bottom: 20px;
 }
+
 .footer_info_text-chose {
   color: var(--accent-color);
   font-family: "Raleway";
@@ -311,6 +516,7 @@ header::after {
   line-height: normal;
   letter-spacing: 0.78px;
 }
+
 .address {
   color: var(--text-accent-color);
   font-family: "Roboto";
@@ -321,6 +527,7 @@ header::after {
   letter-spacing: 0.42px;
   margin-bottom: 10px;
 }
+
 .footer_info_contacts_link {
   color: var(--non-hover-color);
   font-family: Roboto;
@@ -330,12 +537,15 @@ header::after {
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
 }
+
 .footer_info {
   margin-right: 70px;
 }
+
 .footer_social {
   margin-right: 90px;
 }
+
 .footer_social_heading {
   color: var(--text-accent-color);
   font-family: "Roboto";
@@ -351,6 +561,7 @@ header::after {
 .footer_social_list {
   display: flex;
 }
+
 .footer_div-circle_svg {
   fill: var(--text-accent-color);
   width: 20px;
@@ -374,16 +585,14 @@ header::after {
 .footer_social_item:hover > .footer_div-circle {
   background-color: var(--accent-color);
 }
-/* чи має сенс, якщо колір не змінюється? */
-.footer_social_item:hover > .footer_div-circle > .footer_div-circle_svg {
-  fill: var(--text-accent-color);
-}
 .footer_social_item:not(:last-child) {
   margin-right: 10px;
 }
+
 .footer_info_contacts-email {
   margin-bottom: 10px;
 }
+
 .footer_input_label {
   display: block;
   color: var(--text-accent-color);
@@ -396,27 +605,26 @@ header::after {
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
+
 .footer_button {
-  display: block;
   width: 200px;
   height: 50px;
-  border-radius: 4px;
-  background: var(--accent-color);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
+
 .footer_button_svg {
   width: 24px;
   height: 24px;
   fill: var(--text-accent-color);
 }
+
 .inDiv_footer_button {
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .footer_button_text {
   color: var(--text-accent-color);
-
   text-align: center;
   font-family: "Roboto";
   font-size: 16px;
@@ -426,6 +634,8 @@ header::after {
   letter-spacing: 0.96px;
   margin-right: 10px;
 }
+
+/* хоча там не сказано, який буде шрифт при написанні в input*/
 .footer_input {
   border-radius: 4px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -444,7 +654,15 @@ header::after {
   outline: none;
   margin-right: 10px;
 }
-/* хоча там не сказано, який буде шрифт при написанні в input*/
+.footer_input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Roboto";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.48px;
+}
 .footer_input::placeholder {
   color: rgba(255, 255, 255, 0.6);
   font-family: "Roboto";
@@ -454,6 +672,7 @@ header::after {
   line-height: 20px; /* 125% */
   letter-spacing: 0.48px;
 }
+
 .footer_div-flex {
   display: flex;
 }

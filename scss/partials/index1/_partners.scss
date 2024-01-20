@@ -1,0 +1,52 @@
+/* partners */
+.partners_svg {
+  fill: rgba(175, 177, 184, 1);
+  width: 105px;
+  height: 60px;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.partners_div {
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  transition-property: border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* 1 px solid обов'язково прописав, бо без цього не працює */
+.partners_item {
+  &:hover > .partners_div {
+    border: 1px solid var(--accent-color);
+  }
+  &:hover > .partners_div > .partners_svg {
+    fill: var(--accent-color);
+  }
+}
+
+.partners {
+  padding: 94px 0px;
+}
+.partners_heading {
+  margin-bottom: 50px;
+  color: var(--hover-accent-color);
+  text-align: center;
+  font-family: "Roboto";
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+}
+
+.partners_list {
+  display: flex;
+}
+.partners_item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}

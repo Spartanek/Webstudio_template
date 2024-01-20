@@ -1,0 +1,30 @@
+/* hero */
+.hero {
+  padding: 200px 0;
+  background-image: url(../../../assets/img/hero.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero_heading {
+  @include text(2.64px, "Roboto", 44px, 900, 60px);
+  color: var(--text-accent-color);
+  text-align: center;
+  font-style: normal;
+  text-transform: uppercase;
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.hero_button {
+  outline: none;
+  padding: 10px 32px;
+  margin: 0 auto;
+  @extend %button;
+}
+.hero_button-text {
+  @include text(0.96px, "Roboto", 16px, 700, 30px);
+  color: var(--text-accent-color);
+  text-align: center;
+  font-style: normal;
+}

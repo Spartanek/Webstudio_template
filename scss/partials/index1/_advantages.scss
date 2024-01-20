@@ -1,0 +1,77 @@
+.advantages_list {
+  display: flex;
+}
+.advantages_item {
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+.advantages {
+  padding: 94px 0px;
+}
+.advantages_heading {
+  color: var(--hover-accent-color);
+  font-family: "Roboto";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.advantages_item-beforeBackground {
+  &::before {
+    margin-bottom: 30px;
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+    background: #f5f4fa;
+  }
+}
+
+.advantages_text {
+  color: var(--non-hover-color);
+  width: 270px;
+  font-family: "Roboto";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
+}
+.advantages_item-beforeSVGAntenna {
+  &::before {
+    content: "";
+    background-image: url(../../../assets/svg/antenna.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.advantages_item-beforeSVGClock {
+  &::before {
+    content: "";
+    background-image: url(../../../assets/svg/clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.advantages_item-beforeSVGAstronaut {
+  &::before {
+    content: "";
+    background-image: url(../../../assets/svg/astronaut.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.advantages_item-beforeSVGDiagram {
+  &::before {
+    content: "";
+    background-image: url(../../../assets/svg/diagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

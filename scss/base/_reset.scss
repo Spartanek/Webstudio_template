@@ -107,17 +107,30 @@ ol,
 ul {
   list-style: none;
 }
-blockquote,
+blockquote {
+  quotes: none;
+  &:before {
+    content: "";
+    content: none;
+  }
+  &:after {
+    content: "";
+    content: none;
+  }
+}
 q {
   quotes: none;
+  &:before {
+    content: "";
+    content: none;
+  }
+  &:after {
+    content: "";
+    content: none;
+  }
 }
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
+// хоча писали ми через ::, але тут через :
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
